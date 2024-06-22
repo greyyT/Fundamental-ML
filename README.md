@@ -21,24 +21,50 @@ The repository is organized into the following directories:
 - **/data**: This directory contains the facial expression dataset. You'll need to download the dataset and place it here before running the notebooks. (Download link provided below)
 - **/notebooks**: This directory contains the Jupyter notebook ```EDA.ipynb```. This notebook guides you through exploratory data analysis (EDA) and classification tasks.
 
-## ⚙️ Usage
+## Model Evaluation and Results
 
-This project is designed to be completed in the following steps:
+**Original Data**:
+- **Random Forest**:
+	- Accuracy: 0.37
+	- F1-score: 0.24
+	- Precision-score: 0.37
+	- Recall: 0.37
+- **SVC**:
+	- Accuracy: 0.31
+	- F1-score: 0.24
+	- Precision-score: 0.34
+	- Recall: 0.31
+- **Logistic Regression**:
+	- Accuracy: 0.33
+	- F1-score: 0.32
+	- Precision-score: 0.31
+	- Recall: 0.33
+- **MLP Classifier**:
+	- Accuracy: 0.37
+	- F1-score: 0.31
+	- Precision-score: 0.37
+	- Recall: 0.37
 
-1. **Fork the Project**: Click on the ```Fork``` button on the top right corner of this repository, this will create a copy of the repository in your own GitHub account. Complete the table at the top by entering your team member names.
+**PCA Data**:
+- **Random Forest**:
+	- Accuracy: 0.31
+	- F1-score: 0.14
+	- Precision-score: 0.40
+	- Recall: 0.31
+- **SVC**:
+	- Accuracy: 0.31
+	- F1-score: 0.20
+	- Precision-score: 0.34
+	- Recall: 0.31
+- **Logistic Regression**:
+	- Accuracy: 0.36
+	- F1-score: 0.27
+	- Precision-score: 0.33
+	- Recall: 0.36
+- **MLP Classifier**:
+	- Accuracy: 0.35
+	- F1-score: 0.31
+	- Precision-score: 0.35
+	- Recall: 0.35
 
-2. **Download the Dataset**: Download the facial expression dataset from the following [link](https://mega.nz/file/foM2wDaa#GPGyspdUB2WV-fATL-ZvYj3i4FqgbVKyct413gxg3rE) and place it in the **/data** directory:
-
-3. **Complete the Tasks**: Open the ```notebooks/EDA.ipynb``` notebook in your Jupyter Notebook environment. The notebook is designed to guide you through various tasks, including:
-    
-    1. Prerequisite
-    2. Principle Component Analysis
-    3. Image Classification
-    4. Evaluating Classification Performance 
-
-    Make sure to run all the code cells in the ```EDA.ipynb``` notebook and ensure they produce output before committing and pushing your changes.
-
-5. **Commit and Push Your Changes**: Once you've completed the tasks outlined in the notebook, commit your changes to your local repository and push them to your forked repository on GitHub.
-
-
-Feel free to modify and extend the notebook to explore further aspects of the data and experiment with different algorithms. Good luck.
+Among all the models, **MLP (Multilayer Perceptron)** appears to be the top performer across both original and PCA-transformed datasets.
